@@ -2,7 +2,10 @@ import React from 'react';
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faEnvelope } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import Image from 'next/image'
+import profile from './Untitled.jpg'
+
 
 const Hero = () => {
   const email = "guillaume.such@gmail.com";
@@ -15,7 +18,13 @@ const Hero = () => {
           <p className="text-lg md:text-xl mt-4 text-[#172554]">FullStack JS Web Developer</p>
         </div>
         <div className="text-right">
-          <img src="https://media.licdn.com/dms/image/C4D03AQHUb8YWhottmA/profile-displayphoto-shrink_200_200/0/1582816179570?e=1714608000&v=beta&t=KwNjP4mAfGYuTjUM6NJ8iWOudBiWuGAOvkA5joho4Jg" alt="Guillaume Such" className="rounded-lg shadow-2xl" />
+        <div className="relative rounded-full shadow-2xl  overflow-hidden">
+      <Image
+        src={profile}
+        alt="Picture of the author"
+        className="w-[250px] h-[250px] object-cover filter "
+      />
+    </div>
         </div>
       </section>
       <div className='flex space-x-4 justify-center pt-40'>
