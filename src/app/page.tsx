@@ -3,6 +3,8 @@ import { NavigationMenuDemo } from '../components/main-nav';
 import Hero from '../components/page-header'
 import Skills from "@/components/skils";
 import { MeteorsDemo } from "@/components/project";
+import ToulonPage from "../components/weather";
+
 
 
 export default function Home() {
@@ -28,7 +30,7 @@ export default function Home() {
 
       <p className="mt-4 mb-10 font-bold text-center text-[#172554]">©Copyright 2024 - Guillaume SUCH</p>
     </div>
-    
+    <ToulonPage/>
     </div>
     
     </div>
