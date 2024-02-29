@@ -29,7 +29,7 @@ export function MeteorsDemo2() {
           </h1>
 
           <p className="font-normal text-base text-center text-slate-500 mb-4 relative z-50">
-            Quizz sur l&apos;histoire de la Ve République
+            Quizz sur l&rsquo;histoire de la Ve République
           </p>
 
           <div className="flex gap-2 align-center flex-row">
