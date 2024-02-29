@@ -11,7 +11,7 @@ const Hero = () => {
   const email = "guillaume.such@gmail.com";
   return (
     <div>
-      <section className="hero text-black text-center flex flex-row align-center justify-center w-full pt-40">
+      <section className="hero text-black text-center flex flex-row mb:flex-col align-center justify-center w-full pt-40">
         <div className="text-left flex flex-col mr-[350px] justify-center">
           <p className="text-lg md:text-xl mb-8 text-[#172554]">Hey there ! I am</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#1e3a8a]">Guillaume SUCH</h1>
