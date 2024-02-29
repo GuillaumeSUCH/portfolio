@@ -23,10 +23,10 @@ export function MeteorsDemo() {
               />
             </svg>
           </div>
-
+          <div className="flex justify-center w-full">
           <p className="font-bold text-xl text-white text-center mb-4 relative z-50">
           TripHub
-          </p>
+          </p></div>
           <p className="font-normal text-center text-slate-500 mb-4 relative z-50">
           Explorez le Monde avec TripHub à Vos Côtés
           </p>
