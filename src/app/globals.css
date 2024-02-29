@@ -4,7 +4,7 @@
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: #eff6ff;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -71,6 +71,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-white text-black; /* or specific Tailwind colors */
+    background-color: #eff6ff; /* Modifier la couleur de fond du corps */
+    color: black; /* Couleur du texte */
   }
 }

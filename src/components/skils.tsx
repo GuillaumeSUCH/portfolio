@@ -1,61 +1,55 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFigma, faReact, faGithub } from '@fortawesome/free-brands-svg-icons'; // Importez les icônes spécifiques de Font Awesome
-
 
 interface Skill {
   category: string;
-  skills: { name: string, icon: any }[]; // Mettez à jour la structure des compétences
+  skills: { name: string }[]; 
 }
 
 const skillsData: Skill[] = [
   {
     category: 'Design',
     skills: [
-      { name: 'Figma', icon: faFigma },
-      { name: 'Tailwind', icon: '' }
+      { name: 'Figma' },
+      { name: 'Tailwind' },
     ],
   },
   {
     category: 'Front-end',
     skills: [
-      { name: 'TypeScript', icon: '' },
-      { name: 'React', icon: faReact }
+      { name: 'Typescript' },
+      { name: 'React' },
+      { name: 'React Native' },
+      {name: 'Next'}
     ],
   },
   {
     category: 'Back-end',
     skills: [
-      { name: 'Node.js', icon: '' },
-      { name: 'Express.js', icon: '' }
+      { name: 'Node.js' },
+      { name: 'Express.js' },
+      { name: 'MongoDB' },
+      { name: 'PostgreSQL' }
     ],
-  },
-  {
-    category: 'Database',
-    skills: [
-      { name: 'MongoDB', icon: '' },
-      { name: 'PostgreSQL', icon: '' }
-    ]
   },
   {
     category: 'Other',
     skills: [
-      { name: 'Git & GitHub', icon: faGithub },
-      { name: 'Vercel', icon: '' }
+      { name: 'Git & GitHub' },
+      { name: 'Vercel' },
+      {name: 'Cloudinary'}
     ],
   },
 ];
 
 const Skills: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 gap-5 md:grid-cols-5 text-center">
+    <div className="grid grid-cols-2 gap-5 md:grid-cols-4 text-center">
       {skillsData.map((skillCategory, index) => (
         <div key={index}>
-          <h2 className="text-2xl font-bold mb-2">{skillCategory.category}</h2>
-          <ul className="list-none pl-6">
+          <h2 className="text-2xl text-[#172554] font-bold mb-2 text-center">{skillCategory.category}</h2>
+          <ul className="list-none">
             {skillCategory.skills.map((skill, idx) => (
-              <li key={idx} className="mb-1 flex justify-center items-center">
-                <FontAwesomeIcon icon={skill.icon} className="size-5 mr-2 justify-center" /> 
+              <li key={idx} className="mb-1 text-[#1e3a8a] flex justify-center items-center">
                 {skill.name}
               </li>
             ))}
