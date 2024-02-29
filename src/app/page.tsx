@@ -3,7 +3,7 @@ import { NavigationMenuDemo } from '../components/main-nav';
 import Hero from '../components/page-header'
 import Skills from "@/components/skils";
 import { MeteorsDemo } from "@/components/project";
-import { MeteorsDemo2 } from "@/components/projects";
+
 
 export default function Home() {
   return (
@@ -21,9 +21,13 @@ export default function Home() {
       <h1 className="text-center text-4xl font-bold text-[#172554] mb-20">Skills</h1>
     <Skills></Skills>
     </div>
-    <div className=" my-40 grid place-items-center gap-x-8 gap-y-4 grid-cols-2">
+    <div className=" mt-40 grid place-items-center gap-x-8 gap-y-4 grid-cols-1">
     <MeteorsDemo/>
-    <MeteorsDemo2/>
+    <div className="mt-40 text-center font-bold text-[#172554]">
+      <p>Designed and built by Guillaume SUCH</p>
+
+      <p className="mt-4 mb-10 font-bold text-center text-[#172554]">©Copyright 2024 - Guillaume SUCH</p>
+    </div>
     
     </div>
     
