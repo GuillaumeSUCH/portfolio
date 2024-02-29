@@ -3,7 +3,7 @@ import { NavigationMenuDemo } from '../components/main-nav';
 import Hero from '../components/page-header'
 import Skills from "@/components/skils";
 import { Projects } from "@/components/project";
-import { Analytics } from "@vercel/analytics/react"
+
 
 
 
@@ -11,13 +11,13 @@ import { Analytics } from "@vercel/analytics/react"
 export default function Home() {
   return (
     <div>
-    <main className="flex flex-row items-center justify-center mt-[15px]">
+    <main className="flex flex-row items-center justify-center mt-[15px] mb:flex-col">
       <div className="flex justify-center w-full max-w-screen-lg">
         <NavigationMenuDemo/>
       </div>
      
     </main>
-    <div className="flex w-full justify-center">
+    <div className="flex w-full mb:flex-col justify-center">
     <Hero></Hero>
     <div id="Contact"></div>
     </div>
