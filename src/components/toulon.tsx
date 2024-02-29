@@ -1,9 +1,7 @@
 "use client";
-
 import React, { useState, useEffect } from 'react';
 import dotenv from 'dotenv';
 dotenv.config();
-
 
 const WeatherComponent = () => {
   const [weatherData, setWeatherData] = useState(null);
@@ -11,27 +9,24 @@ const WeatherComponent = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchWeatherData = async () => {
-      try {
-        const apiKey = process.env.API;
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=toulon&appid=${apiKey}&units=metric`;
-        const response = await fetch(apiUrl);
-        console.log(response)
+    const apiKey = process.env.API;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=toulon&appid=${apiKey}&units=metric`;
+
+    fetch(apiUrl)
+      .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch weather data');
         }
-        const data = await response.json();
-        
+        return response.json();
+      })
+      .then(data => {
         setWeatherData(data);
         setLoading(false);
-      } catch (error) {
+      })
+      .catch(error => {
         setError(error.message);
         setLoading(false);
-      }
-    };
-
-    fetchWeatherData();
-
+      });
   }, []);
 
   if (loading) return <p>Loading...</p>;
