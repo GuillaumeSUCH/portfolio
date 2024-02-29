@@ -13,14 +13,21 @@ const Hero = () => {
     <div>
       <section className="hero text-black text-center flex flex-col md:flex-row mb:flex-col justify-center items-center w-full pt-40">
         <div className="mb-8">
+          <div className="relative rounded-full shadow-2xl overflow-hidden mx-auto mb-4 md:mb-0 w-[250px] h-[250px]">
+            <Image
+              src={profile}
+              alt="Picture of the author"
+              className="object-cover w-full h-full"
+            />
           </div>
-        <div className="text-center md:text-center">
+        </div>
+        <div className="text-center md:text-left">
           <p className="text-lg md:text-xl mb-8 text-[#172554]">Hey there! I am</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#1e3a8a]">Guillaume SUCH</h1>
           <p className="text-lg md:text-xl mt-4 text-[#172554]">FullStack JS Web Developer</p>
         </div>
       </section>
-      <div className='flex space-x-4 justify-center md:flex-row mb:flex-col pt-40'>
+      <div className='flex space-x-4 justify-center pt-40'>
         <Button className='bg-[#172554]'>
           <Link href="https://github.com/GuillaumeSUCH" target="_blank" rel="noopener noreferrer">
             <div className="flex items-center">
