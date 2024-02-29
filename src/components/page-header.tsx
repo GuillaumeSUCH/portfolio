@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="text-left flex flex-col mr-[350px] justify-center">
         <p className="text-lg md:text-xl mb-8 text-[#172554]">Hey there !</p>
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#1e3a8a]">Guillaume SUCH</h1>
-        <p className="text-lg md:text-xl mt-4 text-[#172554]">FullStack Web Developer</p>
+        <p className="text-lg md:text-xl mt-4 text-[#172554]">FullStack JS Web Developer</p>
       </div>
       <div className="text-right">
         <img src="https://media.licdn.com/dms/image/C4D03AQHUb8YWhottmA/profile-displayphoto-shrink_200_200/0/1582816179570?e=1714608000&v=beta&t=KwNjP4mAfGYuTjUM6NJ8iWOudBiWuGAOvkA5joho4Jg" alt="Guillaume Such" className="rounded-lg shadow-2xl" />

@@ -22,21 +22,21 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
       <NavigationMenuItem>
-  <Link href="/skills" legacyBehavior passHref>
+  <Link href="#Skills" legacyBehavior passHref>
     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
       Skills
     </NavigationMenuLink>
   </Link>
 </NavigationMenuItem>
 <NavigationMenuItem>
-  <Link href="/skills" legacyBehavior passHref>
+  <Link href="#Projects" legacyBehavior passHref>
     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-      Projets
+      Projects
     </NavigationMenuLink>
   </Link>
 </NavigationMenuItem>
 <NavigationMenuItem>
-  <Link href="/projets" legacyBehavior passHref>
+  <Link href="#Contact" legacyBehavior passHref>
     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
       Contact
     </NavigationMenuLink>
