@@ -3,6 +3,7 @@ import { NavigationMenuDemo } from '../components/main-nav';
 import Hero from '../components/page-header'
 import Skills from "@/components/skils";
 import { Projects } from "@/components/project";
+import { Analytics } from "@vercel/analytics/react"
 
 
 
