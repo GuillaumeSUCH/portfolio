@@ -11,7 +11,7 @@ import { Projects } from "@/components/project";
 export default function Home() {
   return (
     <div>
-    <main className="flex flex-row items-center justify-center mt-[15px] ">
+    <main className="flex flex-row items-center justify-center mt-[15px] mb:flex-col ">
       <div className="flex justify-center w-full max-w-screen-lg">
         <NavigationMenuDemo/>
       </div>
