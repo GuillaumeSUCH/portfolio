@@ -29,10 +29,10 @@ const Hero = () => {
             </div>
           </Link>
         </Button>
-        <Button className='bg-[#172554]'>
+        <Button className='bg-[#172554] color-[white]'>
           <a href={`mailto:${email}`}>guillaume.such@gmail.com</a>
         </Button>
-        <Button className='bg-[#172554]'>
+        <Button className='bg-[#172554] color-[white]'>
           <Link href="https://www.linkedin.com/in/guillaume-such/" target="_blank" rel="noopener noreferrer">
             <div className="flex items-center">
               <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6 mr-2" />
