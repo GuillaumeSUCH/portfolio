@@ -10,7 +10,8 @@ import { Projects } from "@/components/project";
 
 export default function Home() {
   return (
-    <div>En Construction
+    <div>
+      <h1>En Construction</h1>
    //
     
     </div>
